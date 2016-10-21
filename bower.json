@@ -1,0 +1,20 @@
+{
+  "name": "test-repo",
+  "description": "<h1>Hi this is test repository</h1>",
+  "main": "index.js",
+  "authors": [
+    "ZhuravlevaMarina <marinajuravleva28gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/ZhuravlevaMarina/bislite",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}

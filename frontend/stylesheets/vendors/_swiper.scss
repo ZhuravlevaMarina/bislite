@@ -1,0 +1,109 @@
+.swiper-container {
+  background: $colorSwiper;
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  .swiper-wrapper{
+    width: 1000px;
+    height: 440px;
+  .swiper-slide {
+    width: 1000px;
+    height: 440px;
+    text-align: center;
+    /* Center slide text vertically*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .swiper-image{
+    position: relative;
+    width: 1000px;
+    height: 440px;
+    margin-top: 39px;
+  }
+  .swiper-text{
+    position: absolute;
+    width: 300px;
+    height: 225px;
+    font-size: 50px;
+    top: 133px;
+    left: 55px;
+    text-align: left;
+    color: $bgBody;
+    font-family: 'Lato-Bold';
+  }
+  }
+  .swiper-pagination-bullet{
+    width: 14px;
+    height: 14px;
+  }
+  .swiper-pagination-bullet-active{
+    background: $bgBody;
+  }
+}
+#portfolio {
+  background: $bgBody;
+  height: 280px;
+  .container {
+    background: $bgBody;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    .swiper-container-second {
+      width: 100%;
+      height: 222px;
+      overflow: hidden;
+
+      .swiper-button-next{
+        background-image: url(/public/images/buttonnext.png);
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 0;
+        left: 98%;
+        margin: 0;
+      }
+      .swiper-button-prev{
+        background-image: url(/public/images/buttonprew.png);
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 0;
+        left: 94%;
+        margin: 0;
+      }
+        .swiper-slide {
+          width: 25%;
+          height: 200px;
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+
+          /* Center slide text vertically */
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+
+
+      }
+    }
+  }
+}

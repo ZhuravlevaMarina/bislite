@@ -1,0 +1,12 @@
+#wrapper{
+  display: flex;
+  flex-direction: column;
+  .container{
+    max-width: $maxWidth;
+    margin: 0 auto;
+  }
+  h3{
+    font-family: $family;
+    font-weight: bold;
+  }
+}
