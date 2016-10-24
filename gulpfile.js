@@ -75,7 +75,7 @@ gulp.task('font:build', function(){                    // Task to relocate fonts
 gulp.task('javascripts:watch', ['javascripts:build'], function(){   // Task for watching new and deleted scripts, task javascripts:build runs before this task is running
     return watch('./frontend/javascripts/**/*.js', function () {    // Path to watching files
         gulp.src('./frontend/javascripts/**/*.js')                  // Path to bulild files
-            .pipe(uglify())                                         // Uglify and minimize scripts
+            //.pipe(uglify())                                         // Uglify and minimize scripts
             .pipe(gulp.dest('./public/js'));                        // destination for optimized scripts
     });
 });
