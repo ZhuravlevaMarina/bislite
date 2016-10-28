@@ -1,0 +1,39 @@
+#download{
+  background: $bgBody;
+  margin-bottom: 40px;
+  .container{
+    border: 2px solid #81e4ed;
+    background: $colorBlue;
+    padding: 28px 0;
+    .download {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .download__text{
+        font-size: 16px;
+        line-height: 26px;
+        width: 600px;
+        padding: 0 0 0 30px;
+      }
+      .btn {
+        width: 238px;
+        height: 60px;
+        background-image: linear-gradient(#94f7ff, #7de1eb 5%, #6cd6e3 65%, #6cd6e3 80%, #39b5ce 95%);
+        border-radius: 8px;
+        box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+        &__box{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          padding: 15px 17px;
+          font-size: 18px;
+          color: $colorText;
+          align-items: center;
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+        border: 1.5px solid #2aacc8;
+      }
+    }
+  }
+}

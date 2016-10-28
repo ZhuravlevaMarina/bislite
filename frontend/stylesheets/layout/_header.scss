@@ -1,17 +1,17 @@
 #header {
   &.site-header {
+    border-bottom: 1px solid $colorLine;
     background: $bgSection;
     padding: 35px 0 37px;
     .container{
       display: flex;
       justify-content: space-between;
-      align-items: flex-end;
     }
     .site-navigation {
       display: flex;
       &__item{
-        padding-right: 23px;
-        padding-top: 6px;
+        padding: 8px 20px 0 4px;
+
         &:hover{
           & > a {
             box-shadow: inset -150px 0 0 0 #fff;
@@ -65,8 +65,8 @@
       .submenu{
         background: #fff;
         position: absolute;
-        top: 100%;
-        left: 0;
+        top: 90%;
+        left: 4px;
         width: 197px;
         display: none;
         z-index: 10;
@@ -92,7 +92,7 @@
       }
       .caret {
         position: absolute;
-        right: 11px;
+        right: 25px;
         top: 55%;
         width: 8px;
         height: 7px;

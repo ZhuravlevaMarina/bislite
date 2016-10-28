@@ -1,0 +1,55 @@
+.promotion {
+  background-color: $bgSection;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    .promotion-box {
+      margin-top: 56px;
+      margin-bottom: 45px;
+      display: flex;
+      justify-content: space-between;
+      .promotion-box__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 220px;
+        margin-right: 40px;
+        font-size: 13px;
+        line-height: 20px;
+        .promotion-box__block {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .promotion-box__caption {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 18px;
+            h3 {
+              padding-left: 21px;
+            }
+          }
+        }
+        .more {
+          color: $colorLink;
+          margin-top: 20px;
+          position: relative;
+          padding-left: 15px;
+          &:before {
+            content: '';
+            background-image: url(/public/images/arrowLink.png);
+            width: 5px;
+            height: 7px;
+            position: absolute;
+            top: 5px;
+            left: 0;
+          }
+        }
+      }
+      .last{
+        margin-right: 0;
+      }
+    }
+  }
+}

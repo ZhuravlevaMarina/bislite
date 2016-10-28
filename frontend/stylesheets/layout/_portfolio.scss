@@ -1,0 +1,93 @@
+#portfolio{
+  background: $bgBody;
+  margin-top: 20px;
+  .container{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #dfe1e5;
+    background: $bgBody;
+    position: relative;
+    .portfolio__caption{
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: flex-end;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #dfe1e5;
+      h3{
+        padding-left: 23px;
+      }
+    }
+    .swiper-container-second {
+      width: 100%;
+      height: 221px;
+      overflow: hidden;
+      .swiper-buttonnext{
+        background-image: url(/public/images/buttonnext.png);
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 0;
+        left: 98%;
+        margin: 0;
+      }
+      .swiper-buttonprev{
+        background-image: url(/public/images/buttonprew.png);
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 0;
+        left: 95%;
+        margin: 0;
+      }
+      .swiper-slide {
+        width: 25%;
+        height: 200px;
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        .swiper-image {
+          position: relative;
+          .box_blue {
+            background: url(/public/images/box_blue.png);
+            width: 220px;
+            height: 81px;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            display: flex;
+            justify-content: space-between;
+            opacity: 0;
+            .eye {
+              padding-left: 70px;
+              padding-top: 30px;
+            }
+            .lock {
+              padding-right: 60px;
+              padding-top: 27px;
+            }
+          }
+        }
+        .swiper-image:hover {
+          .box_blue {
+            opacity: 1;
+            transition: 1s;
+          }
+        }
+      }
+    }
+  }
+}
