@@ -27,13 +27,14 @@
       margin: 40px 0;
       border-bottom: 1px solid $colorLine;
       .item{
+        float: left;
+        width: 220px;
         margin: 0 30px 35px 0;
       }
       div:nth-child(4n+4){
         margin-right: 0;
       }
         .grid-item{
-          width: 220px;
           position: relative;
           .box_blue {
             background: url(/public/images/box_blue.png);

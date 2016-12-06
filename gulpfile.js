@@ -35,6 +35,11 @@ gulp.task('sass', function () {                         // Task for compile sass
         .pipe(gulp.dest('./public/css'));               // destination for compile files
 });
 
+gulp.task('css', function(){              // Task to relocate scripts from frontend folder to public folder
+    gulp.src('./frontend/stylesheets/**/*.css')          // Path to scripts
+        .pipe(gulp.dest('./public/css'));                // destination for optimized scripts
+});
+
 gulp.task('image:watch', ['image:build'], function(){   // Task for watching new and deleted images, task image:build runs before this task is running
     return watch([                                      // path to files to watch
         './frontend/images/**/*.jpg',
@@ -69,20 +74,20 @@ gulp.task('font:build', function(){                    // Task to relocate fonts
         './frontend/fonts/**/*.woff',
         './frontend/fonts/**/*.eot'
     ])
-    .pipe(gulp.dest('./public/fonts'));            // destination for fonts
+        .pipe(gulp.dest('./public/fonts'));            // destination for fonts
 });
 
 gulp.task('javascripts:watch', ['javascripts:build'], function(){   // Task for watching new and deleted scripts, task javascripts:build runs before this task is running
     return watch('./frontend/javascripts/**/*.js', function () {    // Path to watching files
         gulp.src('./frontend/javascripts/**/*.js')                  // Path to bulild files
-            //.pipe(uglify())                                         // Uglify and minimize scripts
+        //.pipe(uglify())                                         // Uglify and minimize scripts
             .pipe(gulp.dest('./public/js'));                        // destination for optimized scripts
     });
 });
 
 gulp.task('javascripts:build', function(){              // Task to relocate scripts from frontend folder to public folder
     gulp.src('./frontend/javascripts/**/*.js')          // Path to scripts
-        //.pipe(uglify())                                 // Uglify and minimize scripts
+    //.pipe(uglify())                                 // Uglify and minimize scripts
         .pipe(gulp.dest('./public/js'));                // destination for optimized scripts
 });
 
@@ -96,7 +101,8 @@ gulp.task('main-bower-files', function() {                      // Task to put b
 });
 
 gulp.task('default', [      // This is default task. You car run it wrining 'gulp' in command prompt
-    'browser-sync',         //
+    'browser-sync',
+    'css',
     'sass',
     'font:build',
     'image:watch',          //
